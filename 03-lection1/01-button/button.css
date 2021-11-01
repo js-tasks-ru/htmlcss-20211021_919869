@@ -2,8 +2,14 @@
 .button {
     border: 0px;
     border-radius: 8px;
-    color: var(--white);
+    cursor: pointer;
+    width: 182px;
+    height: 48px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
     text-align: center;
+    color: var(--white);
 }
 
 /* Primary */
@@ -12,7 +18,6 @@
 }
 
 .button_primary:hover {
-    cursor: pointer;
     background: #2342C0;
 }
 
@@ -27,7 +32,6 @@
 }
 
 .button_secondary:hover {
-    cursor: pointer;
     background: #5028C6;
 }
 
@@ -45,7 +49,6 @@
 }
 
 .button_alternate:hover {
-    cursor: pointer;
     border: 1px solid var(--black);
     transition: border 2s ease-in-out;
 }
