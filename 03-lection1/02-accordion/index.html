@@ -2,16 +2,25 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
+        <details class="accordion">
+            <summary class="accordion__summary">
+                HTML
             </summary>
-            <p>
-                Hidden content
+            <p class="accordion__detail">
+                HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов для просмотра веб-страниц в браузере.
+            </p>
+        </details>
+        <details class="accordion">
+            <summary class="accordion__summary">
+                CSS
+            </summary>
+            <p class="accordion__detail">
+                CSS (/siːɛsɛs/ англ. Cascading Style Sheets «каскадные таблицы стилей») — формальный язык описания внешнего вида документа (веб-страницы), написанного с использованием языка разметки (чаще всего HTML или XHTML).
             </p>
         </details>
     </body>

@@ -1,1 +1,51 @@
 /* Стилизация аккордеона */
+.accordion {
+    box-sizing: border-box;
+    left: 10px;
+    top: 10px;
+    width: 579px;
+    padding: 15px;
+    border: 1px solid var(--grey-3);
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.accordion:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion__summary {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+    color: var(--black);
+}
+
+.accordion__summary:hover {
+    cursor: pointer;
+}
+
+.accordion[open] .accordion__summary {
+    font-weight: bolder;
+}
+
+.accordion__summary::-webkit-details-marker {
+/* 
+    Для поддержки Chrome версий 88 и ниже. C 89 версии summary имеет display: list-item по-умолчанию.
+    Стандартный маркер убирается путем изменения display: list-item на display: block
+*/
+    display: none
+}
+
+.accordion__detail {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+    color: var(--grey-4);
+    margin-bottom: 0px;
+    text-align: justify;
+}
