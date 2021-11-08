@@ -1,18 +1,21 @@
 /* Стилизация аккордеона */
 .accordion {
-    box-sizing: border-box;
-    left: 10px;
-    top: 10px;
     width: 579px;
     padding: 15px;
     border: 1px solid var(--grey-3);
     background-color: var(--white);
     border-radius: 8px;
-    margin-bottom: 8px;
-    position: relative;
 }
 
-.accordion:last-child {
+.accordion__item {
+    /* position: relative;
+    left: 10px;
+    top: 10px;*/
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.accordion__item:last-child {
     margin-bottom: 0px;
 }
 
